@@ -1,15 +1,15 @@
 type MenuOptions = '' | 'all' | 'dog' | 'cat' | 'fish';
 
 export const createMenuObject = (activeMenu: MenuOptions) => {
-	let returnObjetec = {
+	let returnObject = {
 		all: false,
 		dog: false,
 		cat: false,
 		fish: false,
 	};
 	if (activeMenu !== '') {
-		returnObjetec[activeMenu] = true;
+		returnObject[activeMenu] = true;
 	}
 
-	return returnObjetec;
+	return returnObject;
 };
